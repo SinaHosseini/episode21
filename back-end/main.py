@@ -28,7 +28,7 @@ def add_new():
     new_price = float(input("Enter new price: "))
     new_count = int(input("Enter count: "))
     my_cursor.execute(
-        f"INSERT INTO {table_name}(Name) VALUES('{new_name}', '{new_price}', '{new_count}')")
+        f"INSERT INTO {table_name}(Name) VALUES('name = {new_name}', price = '{new_price}', count = '{new_count}')")
     connection.commit()
     print("add successful")
     print()
